@@ -16,4 +16,4 @@ Here are some ideas to get you started:
 -->
 
 - 🌱 I’m currently learning: Java / C++
-- 📫 How to reach me: Arsenides@163.com
+- 📫 How to reach me: d332zms@hotmail.com 
