@@ -2,23 +2,88 @@
 <html lang="zh-Hans-CN">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>清钰的个人简介页面</title>
+        <!-- 样式 CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/lipten/slidePage/dist/slidePage.min.css">
+        <style type="text/css">
+            html, body {width: 100%; height: 100%;}
+            body {margin: 0; padding: 0; background: #000;}
+            .page1 {background-color: #12aa9c;}
+            .page2 {background-color: #f7eead;}
+        </style>
     </head>
     <body>
-        <h1>清钰的自我介绍</h1>
-        <p>日常用id：清钰 FF14前id：照水</p>
-        <h2>长久以来的推</h2>
-        <p>在原守人 - TSUKIPRO</p>
-        <p>文月海 - 月歌</p>
-        <p>美合月下 - Polapori</p>
-        <p>符德 - 神仙记事录</p>
-        <h2>梦对象</h2>
-        <p>山姥切国广 - 刀剑乱舞</p>
-        <p>Lancet-2- 明日方舟</p>
-        <h2>可能会产的品</h2>
-        <p>宗守 海隼 及各种三四角恋</p>
-        <h2>其他</h2>
-        <p>混乱中立派杂食</p>
-        <p>人不拒我我不拒人主义</p>
+        <!-- 滚动容器 -->
+        <div class="slide-container" id="slide-container">
+            <div class="slide-page page1">
+              <div class="container">
+                <h1>清钰的自我介绍</h1>
+                <p>日常用id：清钰 FF14前id：照水</p>
+                <h2>长久以来的推</h2>
+                <p>在原守人 - TSUKIPRO</p>
+                <p>文月海 - 月歌</p>
+                <p>美合月下 - Polapori</p>
+                <p>符德 - 神仙记事录</p>
+                <h2>梦对象</h2>
+                <p>山姥切国广 - 刀剑乱舞</p>
+                <p>Lancet-2- 明日方舟</p>
+                <h2>可能会产的品</h2>
+                <p>宗守 海隼 及各种三四角恋</p>
+                <h2>其他</h2>
+                <p>混乱中立派杂食</p>
+                <p>人不拒我我不拒人主义</p>
+              </div>
+            </div>
+            <div class="slide-page page2">
+              <div class="container">
+                <h2>page2</h2>
+                <p>page2 content</p>
+              </div>
+            </div>
+        </div>
+        <!-- 样式 JS -->
+        <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lipten/slidePage/dist/slidePage.min.js"></script>
+        <!-- 滚动设置 -->
+        <script>
+            // 初始化slidePage
+            new slidePage();
+            var slidepage = new slidePage({
+                slideContainer: '#slide-container', // 指定slidePage要运行的容器选择器或元素
+                slidePages: '.slide-page', // 指定`slideContainer`容器里每个page的选择器或元素
+                page: 1, // 首次进入的page页码
+                dragMode: false, // 移动端开启触控拖动滑屏模式(此功能还在测试阶段)，默认为false，前提是`useSwipe: true`
+                useAnimation : true, // 	是否开启动画
+                refresh: true, // 每次滚动进入是否重新执行动画
+                useWheel: true, // 是否开启鼠标滚轮滑动
+                useSwipe: true, // 是否开启移动端触控滑动
+                // Events
+                before: function(origin,direction,target){
+                    console.log("即将从第" + origin + "页向" + direction + "切换到第" + target + "页");
+                },
+                after: function(origin,direction,target){
+                    console.log("已切换到第" + target + "页");
+                },
+            });
+          </script>
     </body>
 </html>
+<!-- 
+<h1>清钰的自我介绍</h1>
+<p>日常用id：清钰 FF14前id：照水</p>
+<h2>长久以来的推</h2>
+<p>在原守人 - TSUKIPRO</p>
+<p>文月海 - 月歌</p>
+<p>美合月下 - Polapori</p>
+<p>符德 - 神仙记事录</p>
+<h2>梦对象</h2>
+<p>山姥切国广 - 刀剑乱舞</p>
+<p>Lancet-2- 明日方舟</p>
+<h2>可能会产的品</h2>
+<p>宗守 海隼 及各种三四角恋</p>
+<h2>其他</h2>
+<p>混乱中立派杂食</p>
+<p>人不拒我我不拒人主义</p>
+ -->
