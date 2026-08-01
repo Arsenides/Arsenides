@@ -1,16 +1,13 @@
-## Hi there 👋
+# 关于我
 
-<!--
-**Arsenides/Arsenides** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+软件工程专业毕业生
 
-Here are some ideas to get you started:
+# 技术栈
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+C++ / Java / Python
+以上均为Hello World水准
+熟悉面向AI许愿式编程
+
+# 联系方式
+
+d332zms@hotmail.com
